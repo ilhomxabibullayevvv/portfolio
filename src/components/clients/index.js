@@ -1,4 +1,5 @@
 import "./style.css"
+
 export default function Clients() {
     return (
         <section className="clients">
@@ -8,7 +9,7 @@ export default function Clients() {
                 <div className="clients__content">
                     <div className="clients__card">
                         <img className="clients__icon" src="/stars.svg" alt="" />
-                        <p className="clients__descraption">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
+                        <p className="clients__descraption">&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.&quot;</p>
                         <div className="clients__content2">
                             <img className="clients__img" src="/icon.png" alt="" />
                             <div className="clients__content3">
@@ -19,7 +20,7 @@ export default function Clients() {
                     </div>
                     <div className="clients__card">
                         <img className="clients__icon" src="/stars.svg" alt="" />
-                        <p className="clients__descraption">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
+                        <p className="clients__descraption">&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.&quot;</p>
                         <div className="clients__content2">
                             <img className="clients__img" src="/icon.png" alt="" />
                             <div className="clients__content3">
@@ -30,7 +31,7 @@ export default function Clients() {
                     </div>
                     <div className="clients__card">
                         <img className="clients__icon" src="/stars.svg" alt="" />
-                        <p className="clients__descraption">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
+                        <p className="clients__descraption">&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.&quot;</p>
                         <div className="clients__content2">
                             <img className="clients__img" src="/icon.png" alt="" />
                             <div className="clients__content3">
