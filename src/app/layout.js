@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +23,72 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <nav className="nav">
+          <div className="container nav__container">
+            <img className="nav__img" src="/logo.svg" alt="" />
+            <ul className="nav__list">
+              <li className="nav__item">
+                <Link href="/" className="nav__link">Home</Link>
+              </li>
+              <li className="nav__item">
+                <Link href="/" className="nav__link">Portfolio</Link>
+              </li>
+              <li className="nav__item">
+                <Link href="/" className="nav__link">About Us</Link>
+              </li>
+              <li className="nav__item">
+                <Link href="/" className="nav__link">Testimonials</Link>
+              </li>
+            </ul>
+            <button className="nav__btn">Contact Me</button>
+          </div>
+        </nav>
         {children}
+        <footer className="footer">
+          <div className="container footer__container">
+            <div className="footer__content">
+              <img src="/logo.svg" alt="" />
+              <ul className="footer__list">
+                <li className="footer__item">
+                  <Link href="/" className="footer__link">Home</Link>
+                </li>
+                <li className="footer__item">
+                  <Link href="/" className="footer__link">Portfolio</Link>
+                </li>
+                <li className="footer__item">
+                  <Link href="/" className="footer__link">About Me</Link>
+                </li>
+                <li className="footer__item">
+                  <Link href="/" className="footer__link">Contact</Link>
+                </li>
+                <li className="footer__item">
+                  <Link href="/" className="footer__link">Testimonials</Link>
+                </li>
+              </ul>
+              <div className="footer__box">
+                <img className="footer__icon" src="/Facebook.svg" alt="" />
+                <img className="footer__icon" src="/Instagram.svg" alt="" />
+                <img className="footer__icon" src="/Twitter.svg" alt="" />
+                <img className="footer__icon" src="/Linkedin.svg" alt="" />
+              </div>
+            </div>
+            <span className="footer__span"></span>
+            <div className="footer__content">
+              <h2 className="footer__title">Made with 💖 by Airdokan</h2>
+              <ul className="footer__list">
+                <li className="footer__item">
+                  <h3 className="footer__sub-title">Privacy Policy</h3>
+                </li>
+                <li className="footer__item">
+                  <h3 className="footer__sub-title">Terms of Service</h3>
+                </li>
+                <li className="footer__item">
+                  <h3 className="footer__sub-title">Cookies Settings</h3>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   );

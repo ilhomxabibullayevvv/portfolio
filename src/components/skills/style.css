@@ -1,0 +1,138 @@
+.skills {
+    padding: 90px 0px;
+}
+
+.skills__title {
+    font-family: Roboto;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 21.33px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    color: #282938;
+    margin-bottom: 15px;
+}
+
+.skills__sub-title {
+    font-family: Roboto;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 64px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #282938;
+    margin-bottom: 60px;
+}
+
+.skills__content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.skills__card {
+    width: 350.3333435058594px;
+    height: 370.33331298828125px;
+    gap: 32px;
+    opacity: 1;
+    border-radius: 10.67px;
+    border-bottom-width: 4px;
+    padding: 32px;
+    background-color: #F5FCFF;
+}
+
+.skills__name {
+    font-family: Roboto;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: #282938;
+    margin-bottom: 15px;
+}
+
+.skills__descraption {
+    width: 301.3333435058594px;
+    opacity: 1;
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 21.33px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #1C1E53;
+}
+
+/* Tablet versiya */
+@media (max-width: 992px) {
+    .skills {
+        padding: 60px 0;
+    }
+
+    .skills__sub-title {
+        font-size: 42px;
+        margin-bottom: 40px;
+    }
+
+    .skills__content {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .skills__card {
+        width: 45%;
+        height: auto;
+        padding: 25px;
+    }
+
+    .skills__descraption {
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+/* Mobile versiya */
+@media (max-width: 576px) {
+    .skills {
+        padding: 40px 0;
+    }
+
+    .skills__title {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .skills__sub-title {
+        font-size: 28px;
+        line-height: 130%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .skills__content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .skills__card {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .skills__name {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .skills__descraption {
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+    }
+}
