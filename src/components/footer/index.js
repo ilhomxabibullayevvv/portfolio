@@ -8,11 +8,21 @@ export default function Footer() {
                 <div className="footer__content">
                     <img className="footer__icon" src="/logo.svg" alt="logo" />
                     <ul className="footer__list">
-                        <li className="footer__item"><Link href="/">Home</Link></li>
-                        <li className="footer__item"><Link href="/">Portfolio</Link></li>
-                        <li className="footer__item"><Link href="/">About Me</Link></li>
-                        <li className="footer__item"><Link href="/">Contact</Link></li>
-                        <li className="footer__item"><Link href="/">Testimonials</Link></li>
+                        <li className="footer__item">
+                            <Link href="/">Home</Link>
+                        </li>
+                        <li className="footer__item">
+                            <Link href="/">Portfolio</Link>
+                        </li>
+                        <li className="footer__item">
+                            <Link href="/">About Me</Link>
+                        </li>
+                        <li className="footer__item">
+                            <Link href="/">Contact</Link>
+                        </li>
+                        <li className="footer__item">
+                            <Link href="/">Testimonials</Link>
+                        </li>
                     </ul>
                 </div>
                 <span className="footer__span"></span>
