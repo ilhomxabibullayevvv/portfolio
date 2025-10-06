@@ -120,7 +120,6 @@
     color: #FFFFFF;
 }
 
-/* Tablet versiya */
 @media (max-width: 992px) {
     .contact {
         padding: 60px 0;
@@ -163,7 +162,6 @@
     }
 }
 
-/* Mobile versiya */
 @media (max-width: 576px) {
     .contact {
         padding: 40px 0;

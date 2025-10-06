@@ -91,7 +91,6 @@
     color: #1C1E53;
 }
 
-/* Tablet versiya */
 @media (max-width: 992px) {
     .clients {
         padding: 60px 0;
@@ -127,7 +126,6 @@
     }
 }
 
-/* Mobile versiya */
 @media (max-width: 576px) {
     .clients {
         padding: 40px 0;
