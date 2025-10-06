@@ -6,7 +6,7 @@ export default function Footer() {
         <footer className="footer">
             <div className="container footer__container">
                 <div className="footer__content">
-                    <img src="/logo.svg" alt="logo" />
+                    <img className="footer__icon" src="/logo.svg" alt="logo" />
                     <ul className="footer__list">
                         <li className="footer__item"><Link href="/">Home</Link></li>
                         <li className="footer__item"><Link href="/">Portfolio</Link></li>
