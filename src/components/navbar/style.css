@@ -101,6 +101,7 @@
         padding: 16px 0;
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
         z-index: 999;
+        margin-top: 25px;
     }
 
     .nav__list.open {
