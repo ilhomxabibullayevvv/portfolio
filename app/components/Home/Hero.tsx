@@ -31,13 +31,13 @@ export default function Hero() {
           </div>
         </div>
         <div className="flex w-full justify-center md:w-1/2 md:justify-end">
-          <div className="relative h-[220] w-[220] overflow-hidden rounded-full border-[7px] border-[#101010] shadow-[0_0_0_1px_#202020] sm:h-[280] sm:w-[280] md:h-[650] md:w-[650]">
+          <div className="relative h-[220] w-[220] overflow-hidden rounded-full border-[7px] border-[#101010] shadow-[0_0_0_1px_#202020] sm:h-[380] sm:w-[380]">
             <Image
               src="/profile.png"
               alt="profile"
               width={650}
               height={650}
-              className="h-full w-full object-cover"
+              className="object-cover"
             />
           </div>
         </div>
