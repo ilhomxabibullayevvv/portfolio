@@ -16,7 +16,7 @@ export default function Hero() {
 
   return (
     <section className="mx-auto max-w-[1200] px-5">
-      <div className="flex min-h-[350] flex-col items-center justify-center gap-10 py-12 md:min-h-[430px] md:flex-row md:justify-between md:gap-8">
+      <div className="flex min-h-[350] flex-col items-center justify-center gap-10 py-12 md:min-h-[430] md:flex-row md:justify-between md:gap-8">
         <div className="w-full md:w-1/2">
           <p className="mb-1 text-[18px] text-white sm:text-[20px] md:text-[48px]">
             Hi, I am
@@ -44,7 +44,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="flex w-full justify-center md:w-1/2 md:justify-end">
-          <div className="relative h-[220] w-[220] overflow-hidden rounded-full border-[7px] border-[#101010] shadow-[0_0_0_1px_#202020] sm:h-[380px] sm:w-[380px]">
+          <div className="relative h-[220] w-[220] overflow-hidden rounded-full border-[7px] border-[#101010] shadow-[0_0_0_1px_#202020] sm:h-[380] sm:w-[380]">
             <Image
               src="/profile.png"
               alt="profile"
