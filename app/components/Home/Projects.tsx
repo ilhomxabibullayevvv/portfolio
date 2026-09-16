@@ -54,14 +54,14 @@ export default function Projects() {
                     <a
                       href={project.github}
                       target="_blank"
-                      className="rounded-[2] border border-[#FFFFFF] px-5 py-2.5 text-[14px] font-medium text-[#FFFFFF] transition duration-300 hover:border-[#27AE60] hover:bg-[#27AE60] hover:text-white"
+                      className="rounded-[2] border border-[#FFFFFF] px-10 py-2.5 text-[14px] font-medium text-[#FFFFFF] transition duration-300 hover:border-[#27AE60] hover:bg-[#27AE60] hover:text-white"
                     >
                       GitHub
                     </a>
                     <a
                       href={project.demo}
                       target="_blank"
-                      className="rounded-[2] border border-[#FFFFFF] px-5 py-2.5 text-[14px] font-medium text-[#FFFFFF] transition duration-300 hover:border-[#27AE60] hover:bg-[#27AE60] hover:text-white"
+                      className="rounded-[2] border border-[#FFFFFF] px-10 py-2.5 text-[14px] font-medium text-[#FFFFFF] transition duration-300 hover:border-[#27AE60] hover:bg-[#27AE60] hover:text-white"
                     >
                       Vercel
                     </a>
