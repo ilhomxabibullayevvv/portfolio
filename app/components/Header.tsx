@@ -80,6 +80,15 @@ export default function Header() {
             </li>
             <li>
               <a
+                href="#projects"
+                onClick={() => setMenuOpen(false)}
+                className="text-xs text-[#FFFFFF]"
+              >
+                Projects
+              </a>
+            </li>
+            <li>
+              <a
                 href="#contact"
                 onClick={() => setMenuOpen(false)}
                 className="text-xs text-[#FFFFFF]"
