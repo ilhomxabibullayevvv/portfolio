@@ -2,28 +2,20 @@ import Image from "next/image";
 
 const projects = [
   {
-    image: "/",
-    title: "E-commerce Website",
+    image: "/trainingcenter.png",
+    title: "Training center",
     description: "Online shop website with responsive design.",
-    technologies: "Next.js, Tailwind CSS, TypeScript",
-    demo: "#",
-    github: "#",
+    technologies: "Tailwind CSS, TypeScript, Next.js",
+    github: "https://github.com/ilhomxabibullayevvv/trainingcenter",
+    demo: "https://trainingcenter-eight.vercel.app/",
   },
   {
-    image: "/",
-    title: "Portfolio Website",
-    description: "Modern responsive portfolio website.",
-    technologies: "Next.js, React, Tailwind CSS",
-    demo: "#",
-    github: "#",
-  },
-  {
-    image: "/",
-    title: "Landing Page",
-    description: "Modern landing page for a business.",
-    technologies: "HTML, CSS, JavaScript",
-    demo: "#",
-    github: "#",
+    image: "/blogpost.png",
+    title: "Blog post",
+    description: "Blog post website with responsive design.",
+    technologies: "Tailwind CSS, TypeScript, Next.js",
+    github: "https://github.com/ilhomxabibullayevvv/blogpost",
+    demo: "https://blogpost-gules-two.vercel.app/",
   },
 ];
 
@@ -60,18 +52,18 @@ export default function Projects() {
                   </p>
                   <div className="mt-5 flex gap-3">
                     <a
-                      href={project.demo}
-                      target="_blank"
-                      className="rounded-[2] border border-[#FFFFFF] px-5 py-2.5 text-[14px] font-medium text-[#FFFFFF] transition duration-300 hover:border-[#27AE60] hover:bg-[#27AE60] hover:text-white"
-                    >
-                      Vercel
-                    </a>
-                    <a
                       href={project.github}
                       target="_blank"
                       className="rounded-[2] border border-[#FFFFFF] px-5 py-2.5 text-[14px] font-medium text-[#FFFFFF] transition duration-300 hover:border-[#27AE60] hover:bg-[#27AE60] hover:text-white"
                     >
                       GitHub
+                    </a>
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      className="rounded-[2] border border-[#FFFFFF] px-5 py-2.5 text-[14px] font-medium text-[#FFFFFF] transition duration-300 hover:border-[#27AE60] hover:bg-[#27AE60] hover:text-white"
+                    >
+                      Vercel
                     </a>
                   </div>
                 </div>
