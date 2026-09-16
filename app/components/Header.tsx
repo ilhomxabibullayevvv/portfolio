@@ -5,61 +5,48 @@ import { useState } from "react";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleScroll = (id: string) => {
-    const element = document.getElementById(id);
-
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-
-    setMenuOpen(false);
-  };
-
   return (
     <header className="mx-auto w-full max-w-[1200] px-5 py-5">
       <div className="flex h-[55] items-center justify-between">
-        <button
-          onClick={() => handleScroll("home")}
+        <a
+          href="#home"
           className="text-[36px] font-semibold tracking-tight text-[#FFFFFF]"
         >
           Ilhom
-        </button>
+        </a>
         <nav className="hidden md:block">
           <ul className="flex items-center gap-7">
             <li>
-              <button
-                onClick={() => handleScroll("about")}
+              <a
+                href="#about"
                 className="text-[15px] text-[#FFFFFF] transition hover:text-[#27AE60]"
               >
                 About me
-              </button>
+              </a>
             </li>
             <li>
-              <button
-                onClick={() => handleScroll("services")}
+              <a
+                href="#services"
                 className="text-[15px] text-[#FFFFFF] transition hover:text-[#27AE60]"
               >
                 Services
-              </button>
+              </a>
             </li>
             <li>
-              <button
-                onClick={() => handleScroll("projects")}
+              <a
+                href="#projects"
                 className="text-[15px] text-[#FFFFFF] transition hover:text-[#27AE60]"
               >
                 Projects
-              </button>
+              </a>
             </li>
             <li>
-              <button
-                onClick={() => handleScroll("contact")}
+              <a
+                href="#contact"
                 className="text-[15px] text-[#FFFFFF] transition hover:text-[#27AE60]"
               >
                 Contact me
-              </button>
+              </a>
             </li>
           </ul>
         </nav>
@@ -67,6 +54,7 @@ export default function Header() {
           onClick={() => setMenuOpen(!menuOpen)}
           className="text-xl text-[#FFFFFF] md:hidden"
           aria-label="Toggle menu"
+          aria-expanded={menuOpen}
         >
           {menuOpen ? "✕" : "☰"}
         </button>
@@ -75,36 +63,40 @@ export default function Header() {
         <nav className="md:hidden">
           <ul className="flex flex-col gap-4 pt-4">
             <li>
-              <button
-                onClick={() => handleScroll("about")}
-                className="text-left text-sm text-[#FFFFFF] transition hover:text-[#27AE60]"
+              <a
+                href="#about"
+                onClick={() => setMenuOpen(false)}
+                className="block text-sm text-[#FFFFFF] transition hover:text-[#27AE60]"
               >
                 About me
-              </button>
+              </a>
             </li>
             <li>
-              <button
-                onClick={() => handleScroll("services")}
-                className="text-left text-sm text-[#FFFFFF] transition hover:text-[#27AE60]"
+              <a
+                href="#services"
+                onClick={() => setMenuOpen(false)}
+                className="block text-sm text-[#FFFFFF] transition hover:text-[#27AE60]"
               >
                 Services
-              </button>
+              </a>
             </li>
             <li>
-              <button
-                onClick={() => handleScroll("projects")}
-                className="text-left text-sm text-[#FFFFFF] transition hover:text-[#27AE60]"
+              <a
+                href="#projects"
+                onClick={() => setMenuOpen(false)}
+                className="block text-sm text-[#FFFFFF] transition hover:text-[#27AE60]"
               >
                 Projects
-              </button>
+              </a>
             </li>
             <li>
-              <button
-                onClick={() => handleScroll("contact")}
-                className="text-left text-sm text-[#FFFFFF] transition hover:text-[#27AE60]"
+              <a
+                href="#contact"
+                onClick={() => setMenuOpen(false)}
+                className="block text-sm text-[#FFFFFF] transition hover:text-[#27AE60]"
               >
                 Contact me
-              </button>
+              </a>
             </li>
           </ul>
         </nav>
