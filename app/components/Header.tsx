@@ -5,96 +5,106 @@ import { useState } from "react";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const handleScroll = (id: string) => {
+    const element = document.getElementById(id);
+
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+
+    setMenuOpen(false);
+  };
+
   return (
-    <header className="mx-auto w-full max-w-[1200] py-5 px-5">
+    <header className="mx-auto w-full max-w-[1200] px-5 py-5">
       <div className="flex h-[55] items-center justify-between">
-        <a
-          href="#"
+        <button
+          onClick={() => handleScroll("home")}
           className="text-[36px] font-semibold tracking-tight text-[#FFFFFF]"
         >
           Ilhom
-        </a>
+        </button>
         <nav className="hidden md:block">
           <ul className="flex items-center gap-7">
             <li>
-              <a
-                href="#about"
+              <button
+                onClick={() => handleScroll("about")}
                 className="text-[15px] text-[#FFFFFF] transition hover:text-[#27AE60]"
               >
                 About me
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="#services"
+              <button
+                onClick={() => handleScroll("services")}
                 className="text-[15px] text-[#FFFFFF] transition hover:text-[#27AE60]"
               >
                 Services
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="#projects"
+              <button
+                onClick={() => handleScroll("projects")}
                 className="text-[15px] text-[#FFFFFF] transition hover:text-[#27AE60]"
               >
                 Projects
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="#contact"
+              <button
+                onClick={() => handleScroll("contact")}
                 className="text-[15px] text-[#FFFFFF] transition hover:text-[#27AE60]"
               >
                 Contact me
-              </a>
+              </button>
             </li>
           </ul>
         </nav>
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="text-xl text-[#FFFFFF] md:hidden"
+          aria-label="Toggle menu"
         >
-          ☰
+          {menuOpen ? "✕" : "☰"}
         </button>
       </div>
       {menuOpen && (
-        <nav className="">
-          <ul className="flex flex-col gap-3 pt-4">
+        <nav className="md:hidden">
+          <ul className="flex flex-col gap-4 pt-4">
             <li>
-              <a
-                href="#about"
-                onClick={() => setMenuOpen(false)}
-                className="text-xs text-[#FFFFFF]"
+              <button
+                onClick={() => handleScroll("about")}
+                className="text-left text-sm text-[#FFFFFF] transition hover:text-[#27AE60]"
               >
                 About me
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="#services"
-                onClick={() => setMenuOpen(false)}
-                className="text-xs text-[#FFFFFF]"
+              <button
+                onClick={() => handleScroll("services")}
+                className="text-left text-sm text-[#FFFFFF] transition hover:text-[#27AE60]"
               >
                 Services
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="#projects"
-                onClick={() => setMenuOpen(false)}
-                className="text-xs text-[#FFFFFF]"
+              <button
+                onClick={() => handleScroll("projects")}
+                className="text-left text-sm text-[#FFFFFF] transition hover:text-[#27AE60]"
               >
                 Projects
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="#contact"
-                onClick={() => setMenuOpen(false)}
-                className="text-xs text-[#FFFFFF]"
+              <button
+                onClick={() => handleScroll("contact")}
+                className="text-left text-sm text-[#FFFFFF] transition hover:text-[#27AE60]"
               >
                 Contact me
-              </a>
+              </button>
             </li>
           </ul>
         </nav>
